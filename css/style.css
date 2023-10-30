@@ -1,6 +1,14 @@
 /* All rules for Space Tourism*/
 /*last rule wins// most specific rule wins*/
 
+/* custom properties*/
+:root {
+    --light-gold: #FFBC61;
+    --dark-gold: #C48C2B;
+    --light-blue: #2A315F;
+    --dark-blue: #101439;
+}
+
 /* Normalizing rules*/
 * {
     box-sizing: border-box;
@@ -62,11 +70,11 @@ h3 {
 .button {
     color: white;
     text-decoration: none;
-    background: #FFBC61;
+    background: var(--dark-gold);
     padding: 5px 20px;
     border-radius: 11px;
     display: inline-block;
-    transition: .5s
+    transition: .5s text-
 }
 
 .button-gold {
@@ -97,8 +105,8 @@ h3 {
 
 .planets {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 100px;
 }
 
@@ -122,29 +130,51 @@ h3 {
     text-align: right;
 
 }
-.foot{
-    background:#C4C4C4 ;
+
+.foot {
+    background: #C4C4C4;
     color: #101439;
     padding: 30px 50px;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     display: grid;
-align-items: end;
+    align-items: end;
 }
-.space{
-    grid-column:2;
+
+.space {
+    grid-column: 2;
     align-items: end;
     text-align: center;
 }
-.contact{
-grid-column: 3;
-align-items: end;
-text-align: right;
+
+.contact {
+    grid-column: 3;
+    align-items: end;
+    text-align: right;
 }
-.info{
+
+.info {
     grid-column: 1;
-  
-     
+
+
 }
-.moon{
+
+.moon {
     text-align: left;
+}
+
+.nav {
+    display: flex;
+    align-items: stretch;
+    flex-direction:
+        font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.scooter {
+    transition: 1s;
+}
+
+.scooter:hover {
+    transform: rotate(30deg);
 }
