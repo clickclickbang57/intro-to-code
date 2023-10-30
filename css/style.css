@@ -1,0 +1,150 @@
+/* All rules for Space Tourism*/
+/*last rule wins// most specific rule wins*/
+
+/* Normalizing rules*/
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+body {
+    background: #2A315F;
+    ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #595C7D;
+}
+
+.feature {
+    background-image: url('../images/space.jpg');
+    background-size: cover;
+    background-position: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.gold-bkg {
+    background: #F3D9B6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+    align-items: end;
+}
+
+/*typogrophy*/
+h3 {
+    color: var(--light-gold, #FFBC61);
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    background: #FFBC61;
+    padding: 5px 20px;
+    border-radius: 11px;
+    display: inline-block;
+    transition: .5s
+}
+
+.button-gold {
+    background: #FFBC61;
+
+
+}
+
+.button-gold:hover {
+    background: #F3D9B6;
+    color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.button-blue {
+    background-color: #2A315F;
+
+}
+
+.button-blue:hover {
+    background-color: #101439;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.pg-padding {
+    padding: 30px 50px;
+}
+
+.planets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 100px;
+}
+
+.center-column {
+    grid-column: 2;
+}
+
+.image-a {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.image-b {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.pluto {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: right;
+
+}
+.foot{
+    background:#C4C4C4 ;
+    color: #101439;
+    padding: 30px 50px;
+    grid-template-columns:1fr 1fr 1fr;
+    display: grid;
+align-items: end;
+}
+.space{
+    grid-column:2;
+    align-items: end;
+    text-align: center;
+}
+.contact{
+grid-column: 3;
+align-items: end;
+text-align: right;
+}
+.info{
+    grid-column: 1;
+  
+     
+}
+.moon{
+    text-align: left;
+}
